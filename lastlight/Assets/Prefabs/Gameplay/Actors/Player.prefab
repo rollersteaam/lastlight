@@ -120,9 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5226cf5f91bc7b1418f3b5f612a550d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardForce: 200
+  forwardForce: 400
   sidewaysForce: 150
-  upwardForce: 50
+  upwardForce: 70
   maxVelocity: 10
   depth: 10
 --- !u!54 &6503328815038480269
@@ -134,7 +134,7 @@ Rigidbody:
   m_GameObject: {fileID: 2752553109991967523}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
