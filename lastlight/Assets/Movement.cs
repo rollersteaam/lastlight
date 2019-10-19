@@ -2,7 +2,7 @@
 
 public class Movement : MonoBehaviour
 {
-    public Rigidbody rb;//set in inspector
+    Rigidbody rb;//set in inspector
 
     public float forwardForce = 200f;
     public float sidewaysForce = 150f;
@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
