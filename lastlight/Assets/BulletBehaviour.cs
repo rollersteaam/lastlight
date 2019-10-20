@@ -15,7 +15,7 @@ public class BulletBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindWithTag("Player");
         rb.transform.LookAt(player.transform);
-        rb.transform.position = GameObject.FindWithTag("Enemy").transform.position;
+      //rb.transform.position = GameObject.FindWithTag("Enemy").transform.position;
         target = new Vector3(player.transform.position.x,player.transform.position.y,player.transform.position.z);
     }
 
