@@ -2,29 +2,43 @@
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    [SerializeField] AudioClip hitSound;
     public int argoDistance = 10;
     GameObject player;
     Rigidbody enemy;
-    // Start is called before the first frame update
+    bool exactTracking;
+
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        enemy = GetComponent<Rigidbody>(); 
+        enemy = GetComponent<Rigidbody>();
+        exactTracking = UnityEngine.Random.Range(0, 2) == 1;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (transform.position.x - player.transform.position.x <= argoDistance)
         {
-            if (transform.position.z > player.transform.position.z) 
+            if (exactTracking)
             {
-                enemy.AddForce(0, 0, -50f);
+                enemy.transform.position = new Vector3(
+                    enemy.transform.position.x,
+                    enemy.transform.position.y,
+                    player.transform.position.z
+                );
             }
-            if (transform.position.z < player.transform.position.z)
+            else
             {
-                enemy.AddForce(0, 0, 50f);
+                if (transform.position.z > player.transform.position.z)
+                {
+                    enemy.AddForce(0, 0, -200f);
+                }
+                if (transform.position.z < player.transform.position.z)
+                {
+                    enemy.AddForce(0, 0, 200f);
+                }
             }
+
         }
     }
     void OnCollisionEnter(Collision collision)
@@ -32,6 +46,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (collision.gameObject == player)
         {
             player.GetComponent<Player>().Damage(20);
+            player.GetComponent<AudioSource>().PlayOneShot(hitSound);
             Destroy(gameObject);
         }
     }

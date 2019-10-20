@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4957717087636548602}
   - component: {fileID: 4957717087636548603}
   m_Layer: 0
-  m_Name: Melee Enemy
+  m_Name: EnemyGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 2958594600585528430, guid: d7b30e85f8bef094e910b07ee71a66a6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.97
       objectReference: {fileID: 0}
     - target: {fileID: 2958594600585528430, guid: d7b30e85f8bef094e910b07ee71a66a6,
         type: 3}
