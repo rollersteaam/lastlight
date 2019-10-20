@@ -28,6 +28,7 @@ public class RangedEnemyBehaviour : MonoBehaviour
                  GameObject clone;
                  clone = Instantiate(bullet, enemy.transform.position, Quaternion.identity);
                  clone.transform.LookAt(player.transform);
+                 clone.transform.position = enemy.transform.position;
                  fired = false;
              });
         }
