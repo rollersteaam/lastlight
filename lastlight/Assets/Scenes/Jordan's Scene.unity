@@ -736,11 +736,6 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 2026982013
       objectReference: {fileID: 0}
-    - target: {fileID: 8976081620672923370, guid: da52d702c20590e4fa7d09b7c81f00e7,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 55
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da52d702c20590e4fa7d09b7c81f00e7, type: 3}
 --- !u!1001 &1079358610906301361
@@ -1221,11 +1216,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 925164567}
-    - target: {fileID: 6942729871025579287, guid: 441d7551039eed64bab1bf549e497cf1,
-        type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6942729871173901374, guid: 441d7551039eed64bab1bf549e497cf1,
         type: 3}
       propertyPath: m_SizeDelta.x
