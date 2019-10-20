@@ -122,11 +122,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5226cf5f91bc7b1418f3b5f612a550d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardForce: 200
-  sidewaysForce: 150
-  upwardForce: 50
-  maxVelocity: 10
-  depth: 10
+  forwardForce: 400
+  sidewaysForce: 50
+  upwardForce: 70
+  maxVelocity: 20
+  depth: 20
 --- !u!54 &6503328815038480269
 Rigidbody:
   m_ObjectHideFlags: 0
